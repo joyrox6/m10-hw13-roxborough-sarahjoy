@@ -137,6 +137,7 @@ const displayWeatherInfo = (weatherObj) => {
 }
 
 const {
-  hour,
-  minute
-}
+  weatherObj: 
+  {hour,
+    minute}
+} = updatedAt

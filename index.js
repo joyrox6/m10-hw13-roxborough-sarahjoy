@@ -1,7 +1,7 @@
 // capture references to important DOM elements
-var weatherContainer = document.getElementById('weather');
-var formEl = document.querySelector('form');
-var inputEl = document.querySelector('input');
+const weatherContainer = document.getElementById('weather');
+const formEl = document.querySelector('form');
+const inputEl = document.querySelector('input');
 
 
 formEl.onsubmit = function(e) {
@@ -9,7 +9,7 @@ formEl.onsubmit = function(e) {
   e.preventDefault();
 
   // capture user's input from form field
-  var userInput = inputEl.value.trim()
+  const userInput = inputEl.value.trim()
   // abort API call if user entered no value
   if (!userInput) return
   // call the API and then update the page

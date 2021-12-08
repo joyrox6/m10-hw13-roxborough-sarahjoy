@@ -124,7 +124,7 @@ const displayWeatherInfo = (weatherObj) => {
   addBreak()
 
   // time weather was last updated
-  var updatedAt = document.createElement('p')
+  const updatedAt = document.createElement('p')
   updatedAt.textContent = "Last updated: " +
     weatherObj.updatedAt.toLocaleTimeString(
       'en-US',
@@ -134,4 +134,9 @@ const displayWeatherInfo = (weatherObj) => {
       }
     )
   weatherContainer.appendChild(updatedAt)
+}
+
+const {
+  hour,
+  minute
 }
